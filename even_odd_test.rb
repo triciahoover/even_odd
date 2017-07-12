@@ -18,4 +18,12 @@ class TestEvenOdd < Minitest::Test
 	def test_input_3_returns_odd
 		assert_equal("odd", evenoddfunction(3))
 	end
+
+	def test_input_934123_returns_odd
+		assert_equal("odd", evenoddfunction(934123))
+	end
+
+	def test_input_is_string_allowed
+		assert_equal("only numbers allowed", evenoddfunction("wombat"))
+	end
 end	

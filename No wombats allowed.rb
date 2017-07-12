@@ -1,5 +1,5 @@
 def evenoddfunction(number)
-  if number.is_a? String	
+  if number == "wombat"
   	"only numbers allowed"
   elsif number % 2 == 0
   	"even"
